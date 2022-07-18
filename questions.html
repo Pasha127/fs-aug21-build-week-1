@@ -7,6 +7,7 @@
     <title>Quiz Questions</title>
     <link rel="stylesheet" href="./questionstyles.css" />
     <link rel="script" href="./questions.js"/>
+    
 </head>
 <body onload="loadTime()">
     <div id="titleContainer " class="titleContainer border">
@@ -20,10 +21,18 @@
       </div>
       <div  class="progressIndicator border">
         <p id="progressIndicatorText"></p>
-      </div>
-      <div  class="countdownTimer border">
+    </div>
+    <div  class="countdownTimer border">
         <p id="countdownTimerText"></p>
-      </div>    
-        <script src="./questions.js"></script>    
+    </div>
+    <div id="chartContainer" class="chartContainer inFront">
+        <canvas id="myChart" width="100" height="100" class="inFront"></canvas>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./questions.js"></script>
+    <!-- chart js --> 
+        
+        <!-- chart js -->
+            
 </body>
 </html>

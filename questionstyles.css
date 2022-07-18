@@ -128,3 +128,13 @@
     position: absolute;
     right: 23.4vw;
 }
+.inFront{
+    z-index: 1;
+}
+.chartContainer{
+    display: flex;
+    position: absolute;    
+    width: 400;
+    overflow: hidden;
+    right: 10vw;
+}
