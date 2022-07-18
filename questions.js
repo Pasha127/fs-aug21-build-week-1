@@ -46,7 +46,7 @@ const easyComputerQuestions = [
     "type":"multiple",
     "time":20,
     "difficulty":"easy",
-    "question":"In &quot;Hexadecimal&quot;, what color would be displayed from the color code? &quot;#00FF00&quot;?",
+    "question":"In Hexadecimal, what color would be displayed from the color code? #00FF00?",
     "correct_answer":"Green",
     "incorrect_answers":["Red","Blue","Yellow"]},
     {"category":"Science: Computers",
@@ -66,7 +66,7 @@ const easyComputerQuestions = [
     "type":"boolean",
     "time":15,
     "difficulty":"easy",
-    "question":"The Python programming language gets its name from the British comedy group &quot;Monty Python.&quot;",
+    "question":"The Python programming language gets its name from the British comedy group Monty Python.",
     "correct_answer":"True",
     "incorrect_answers":["False"]},
     //--------------
@@ -89,7 +89,7 @@ const easyComputerQuestions = [
         "time":20,
         difficulty: "easy",
         question:
-        "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn&#039;t get modified?",
+        "In the programming language Java, which of these keywords would you put on a variable to make sure it doesn't get modified?",
         correct_answer: "Final",
         incorrect_answers: ["Static", "Private", "Public"],
     },
