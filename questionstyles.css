@@ -1,0 +1,130 @@
+.body{ 
+    display: flex;   
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.titleContainer{
+    display: flex;
+    position: absolute;    
+    width: 75vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-43vh);
+    background-color: rgb(255, 255, 255);
+}
+.gameContainer{
+    display: flex;
+    position: absolute;    
+    width: 75vw;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+.questionContainer{        
+    display: flex;
+    width: 75vw;
+    height: 10vh;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;       
+    margin-block: auto;
+    background-color: rgb(255, 255, 255);
+}
+.answerContainer{
+    flex-direction: row;
+    max-width: 75vw;
+    height: 10vh;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+.questionText{
+    font-weight: 300;
+    font-size: 25pt;
+}
+.option{    
+    width: 35vw;
+    height: 20vh;
+    margin: 1%;
+    justify-content: center;
+    align-items: center;       
+    margin-block: auto;
+    display: flex;
+    font-size: 30px;
+}
+.option:hover{
+    background-color: darkgray;
+}
+.scoreScreen{
+    display: flex;
+    position: absolute;    
+    width: 75vw;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0);    
+}
+.sScreenText{
+    color: white;
+    font-size: 32pt;    
+}
+.restart{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: absolute;
+    bottom: 20%;
+    height: 5vh;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+.restart:hover{
+    background-color:darkgrey;
+}
+.restart p{
+    font-size: 20pt;
+}
+.invisible{
+    visibility: hidden;
+}
+.progressIndicator{
+    display: flex;
+    position: absolute;    
+    width: 75vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(75vh);
+    background-color: rgb(255, 255, 255);
+
+}
+.countdownTimer{    
+    width: 10vh;
+    height: 10vh;
+    margin: 1%;
+    justify-content: center;
+    align-items: center;       
+    margin-block: auto;
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    right: 23.4vw;
+}

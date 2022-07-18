@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Questions</title>
+    <link rel="stylesheet" href="./questionstyles.css" />
+    <link rel="script" href="./questions.js"/>
+</head>
+<body onload="loadTime()">
+    <div id="titleContainer " class="titleContainer border">
+        <h1 class="title">Lets Get Quizzy With It!</h1>
+      </div>    
+      <div id="gameContainer " class="gameContainer ">
+        <div id="questionContainer " class="questionContainer border">
+            <p id="questionText" class="questionText"></p>
+      </div>
+        <div id="answerContainer " class="answerContainer border"></div>
+      </div>
+      <div  class="progressIndicator border">
+        <p id="progressIndicatorText"></p>
+      </div>
+      <div  class="countdownTimer border">
+        <p id="countdownTimerText"></p>
+      </div>    
+        <script src="./questions.js"></script>    
+</body>
+</html>
