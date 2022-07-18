@@ -1,0 +1,106 @@
+body {
+  margin: 0px;
+  background: #0e0e0e;
+  height: 100%;
+  }
+#main-div {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  }
+#logo {
+  margin-left: 190pt;
+  margin-bottom: 80pt;
+  position: relative;
+  top: 60px;
+  }  
+#welcome-to {
+  width: 580px;
+  font-family: "Outfit", sans-serif;
+  font-size: 63pt;
+  margin-top: 40pt;
+  margin-left: 190pt;
+  font-weight: 400;
+  display: inline-block;
+  color: white;
+  font-weight: 200;
+  line-height: 80%;
+  margin-bottom: 45px;
+  }
+#exam {
+  color: aliceblue;
+  font-weight: 600;
+  }
+#h3 {
+  font-family: "Outfit", sans-serif;
+  margin-left: 190pt;
+  color: rgb(196, 44, 161);
+  font-size: 28pt;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  }
+#paragraph {
+  font-family: "Outfit", sans-serif;
+  font-size: 15pt;
+  color: white;
+  margin-left: 190pt;
+  margin-right: 600pt;
+  margin-top: 0px;
+  font-weight: 200;
+  }
+ul {
+  font-family: "Outfit", sans-serif;
+  margin-left: 180pt;
+  color: aliceblue;
+  font-size: 14pt;
+  margin-top: 35pt;
+  font-weight: 200;
+  margin-bottom: 60pt;
+  line-height: 22pt;
+  }
+#checkbox {
+  width: 4px;
+  height: 4px;
+  padding: 5px;
+  border: 2px solid white;
+  margin-left: 190pt; 
+  display: inline-block;
+  margin-top: 0px;
+  cursor: pointer
+  }
+.selected {
+  background-color: white;
+  }
+#span {
+  font-size: 12pt;
+  font-weight: 500;
+  font-family: "Outfit", sans-serif;
+  color: white;
+  margin-left: 15px;
+  position: relative;
+  bottom: 3px;
+  }
+#button {
+  font-family: "Outfit", sans-serif;
+  padding: 15px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: 250px;
+  font-size: 22pt;
+  font-weight: 700;
+  background-color: aqua;
+  box-shadow: -3px -2px 35px 8px rgba(0, 255, 255, 0.35);
+  border: 0px;
+  cursor: pointer;
+  transition: background 0.15s linear 0.1s , color 0.15s linear 0s;
+  }
+#button:hover {
+  background:  rgb(210, 0, 148);
+  color: rgb(0,255,255);
+  box-shadow: 0px 0px 45px rgb(0,255,255);
+  border-color: rgb(0,255,255);
+  }
