@@ -219,12 +219,12 @@ const myChart = new Chart(ctx, {
         }
     }
 });
+let countUp =1;               
 myChart.options.cutout =  35
     
     let questionNumber = -1;
     const questionText = document.querySelector("#questionText");
     let question = easyComputerQuestions[questionNumber];    
-    let countUp =1;
 
     const countdown = function (){ 
         countdownTimer--;
@@ -235,10 +235,10 @@ myChart.options.cutout =  35
             myChart.data.datasets[0].data[0] =  countUp;
             myChart.data.datasets[0].data[1] = countdownTimer;
             myChart.update();
-            clearInterval(interval);
+            
         }else{
             timer.innerText = "0";
-            clearInterval(interval);
+            
             countUp = 0;
             setTimeout(nextQuestion, 1000)
         }
@@ -259,7 +259,9 @@ myChart.options.cutout =  35
     
     const answerContainer = document.querySelector(".answerContainer");
     
-    const nextQuestion = function (){        
+    const nextQuestion = function (){   
+        countUp = 1; 
+        clearInterval(interval);    
         while (answerContainer.firstChild) {
             answerContainer.removeChild(answerContainer.firstChild);
         }        
