@@ -306,7 +306,8 @@ myChart.options.cutout =  35
                 questionWrong();
             }            
         }
-        document.getElementById("progressIndicatorText").innerText = `QUESTION ${questionNumber+1}/${easyComputerQuestions.length}`;
+        document.getElementById("progressIndicatorText").innerText = `QUESTION ${questionNumber+1}`;
+        document.getElementById("totalQuestions").innerText = ` /${easyComputerQuestions.length}`;
     }
 
 
