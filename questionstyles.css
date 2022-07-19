@@ -15,22 +15,8 @@ body{
     border-image-slice: 1;
     border-radius: 10vh;
 } */
-.border{
-
-    --b:2px;  /* border width*/
-    --r:10vh; /* the radius */
-    
-    color: #ffffff;
-    padding: calc(var(--b) + 5px);
-    display: inline-block;
-    margin: 75px 0;
-    position:relative;
-    z-index:0;
-    border-radius: 10vh
-    
-}
 .border:before {
-    content: "";
+    /* content: "";
     position: absolute;
     z-index: -1;
     inset: 0;
@@ -44,19 +30,28 @@ body{
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-    mask-composite: exclude;
+    mask-composite: exclude; */
+}
+.border{
+
+    width: 300px;
+  height: 80px;
+  border: double 2px transparent;
+  border-radius: 10vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.349),rgba(255, 255, 255, 0.349)),         /*here must be*/
+  linear-gradient(160deg, rgba(255, 255, 255, 0.342), rgba(128, 128, 128, 0.336));    /*both gradients*/
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  
+    
 }
     
-.border:hover{
-    background-image: linear-gradient(180deg, #d20093,#d20093,#d20093, #50063a56) ;
-    --b:2px;  /* border width*/
-    --r:10vh; /* the radius */    
-    color: #ffffff;
-    padding: calc(var(--b) + 5px);
-    display: absolute;    
-    position:relative;
-    z-index:0;
-    border-radius: 10vh
+.border:hover{  
+  
+  
+  background-image: linear-gradient(rgba(255, 255, 255, 0.349),rgba(255, 255, 255, 0.349)),         /*here must be*/
+  linear-gradient(180deg, #d20093,#d20093,#d20093, #50063a56);    /*both gradients*/
+
     
     
 
@@ -130,7 +125,7 @@ body{
     margin-block: 1vh;
     display: flex;
     font-size: 30px;
-    background-color: rgba(128, 128, 128, 0.301);
+    
 }
 .option p{
     font-size: 16pt;
@@ -170,15 +165,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.restart:hover{
-    background-color:darkgrey;
-}
-.restart p{
-    font-size: 20pt;
-}
-.invisible{
-    visibility: hidden;
-}
+
+
 .progressIndicator{
     
     position: absolute;    
@@ -196,21 +184,19 @@ body{
     display: inline-block;
 }
 
-
-
-
 .countdownTimer{    
     color: white;
     font-family: 'Inter', sans-serif;    
     justify-content: center;
     align-items: center;       
-    margin-block: auto;
+    margin: 55px 0 0 50px;
     display: flex;
     font-size: 24pt;
-    position: absolute;
-    right: 33px;
-    top: 4px;
-    
+    position: absolute;       
+}
+#countdownTimerText{
+    position: fixed;
+
 }
 .secondsText{
     position: absolute;
