@@ -184,7 +184,7 @@ const loadTime = function () {
     //console.log("loaded");
     sessionStorage.clear();    
     let pointCount = 0;
-    let countdownTimer ="START";
+    let countdownTimer =easyComputerQuestions[0].time;
     const timer = document.getElementById("countdownTimerText");
     timer.innerText = countdownTimer;
 
@@ -199,20 +199,14 @@ const myChart = new Chart(ctx, {
             label: '# of Votes',
             data: [ 0,1],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(128, 128, 128, 0.445)',
+                '#00FFFF',
+                
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(128, 128, 128, 0.445)',
+                '#00FFFF'
+                
             ],
             borderWidth: 1
         }]
@@ -225,26 +219,24 @@ const myChart = new Chart(ctx, {
         }
     }
 });
-myChart.options.cutout =  40;
+myChart.options.cutout =  35
     
     let questionNumber = -1;
     const questionText = document.querySelector("#questionText");
-    let question = easyComputerQuestions[questionNumber];
-    const replayButton = document.createElement("div");
-    replayButton.setAttribute("class","restart");
+    let question = easyComputerQuestions[questionNumber];    
     let countUp =1;
 
     const countdown = function (){ 
         countdownTimer--;
         countUp ++;        
-        console.log(countdownTimer)
+        //console.log(countdownTimer)
         if(countdownTimer > -1){
             timer.innerText = countdownTimer+1;
             myChart.data.datasets[0].data[0] =  countUp;
             myChart.data.datasets[0].data[1] = countdownTimer;
             myChart.update();
         }else{
-            timer.innerText = "Time's Up!";
+            timer.innerText = "0";
             clearInterval(interval);
             countUp = 0;
             setTimeout(nextQuestion, 1000)
@@ -277,7 +269,7 @@ myChart.options.cutout =  40;
         }
         countdownWrapper();
         
-        if(questionNumber< easyComputerQuestions.length){
+    if(questionNumber< easyComputerQuestions.length){
             questionText.innerText = easyComputerQuestions[questionNumber].question;
             question = easyComputerQuestions[questionNumber]
             let allAnswers = []
