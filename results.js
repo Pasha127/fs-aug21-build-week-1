@@ -1,26 +1,38 @@
-let total = 20;
-let correct = 13;
-let wrong = 7;
+const total = sessionStorage.getItem("numberOfQuestions");
+const correct = sessionStorage.getItem("score");
+const wrong = total - correct;
 
-let correctPercentage = (correct / total) * 100;
-let wrongPercentage = 100 - correctPercentage;
+const correctPercentage = (correct / total) * 100;
+const wrongPercentage = 100 - correctPercentage;
 
-let data = {
+const data = {
   datasets: [
     {
-      data: [correctPercentage, wrongPercentage],
-      backgroundColor: ["#00FFFF", "#D20094"],
+      data: [wrongPercentage, correctPercentage],
+      backgroundColor: ["#D20094", "#00FFFF"],
     },
   ],
 };
-let promisedDeliveryChart = new Chart(document.getElementById("myChart"), {
+const promisedDeliveryChart = new Chart(document.getElementById("myChart"), {
   type: "doughnut",
   data: data,
   options: {
     cutoutPercentage: 70,
-    rotation: 120,
+    rotation: 180,
   },
 });
+
+const addCorrectPercentage = document.getElementById("correct-percentage");
+addCorrectPercentage.innerText = `${correctPercentage}%`;
+
+const addWrongPercentage = document.getElementById("wrong-percentage");
+addWrongPercentage.innerText = `${wrongPercentage}%`;
+
+const addCorrectAnswers = document.getElementById("correct-answers");
+addCorrectAnswers.innerText = `${correct}/${total} questions`;
+
+const addWrongAnswers = document.getElementById("wrong-answers");
+addWrongAnswers.innerText = `${wrong}/${total} questions`;
 
 const btnRateUs = document.querySelector("#rateUs");
 

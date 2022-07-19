@@ -51,15 +51,15 @@ body {
   margin: 0;
 }
 
-.correct-percentage,
-.wrong-percentage {
+#correct-percentage,
+#wrong-percentage {
   font-size: 4rem;
   font-weight: 600;
   margin: 0;
 }
 
-.correct-questions,
-.wrong-questions {
+#correct-answers,
+#wrong-answers {
   font-size: 1.8rem;
   font-weight: 400;
   margin: 0;
