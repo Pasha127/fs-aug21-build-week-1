@@ -1,9 +1,9 @@
-/* body {
+body {
     margin: 0px;
     background: #0e0e0e;
     height: 100%;
     }
- */  #main-div {
+  #main-div {
     background-image: url('bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;

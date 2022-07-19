@@ -225,7 +225,7 @@ const myChart = new Chart(ctx, {
         }
     }
 });
-
+myChart.options.cutout =  40;
     
     let questionNumber = -1;
     const questionText = document.querySelector("#questionText");
