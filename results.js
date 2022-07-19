@@ -18,7 +18,8 @@ const promisedDeliveryChart = new Chart(document.getElementById("myChart"), {
   data: data,
   options: {
     cutoutPercentage: 70,
-    rotation: 180,
+    minRotation: 90,
+    maxRotation: 90,
   },
 });
 

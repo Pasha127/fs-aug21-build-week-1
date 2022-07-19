@@ -10,7 +10,6 @@
   />
     <title>Results Page</title>
     <link rel="stylesheet" href="resultsstyles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
   <body>
     <img class="logo" src="./assets/epicode_logo.png" alt="" />
@@ -25,7 +24,7 @@
       <div class="correct-details">
         <p class="score-text">Correct</p>
         <p id="correct-percentage"></p>
-        <p id="correct-answers">4/6 questions</p>
+        <p id="correct-answers"></p>
       </div>
       
         <div class="chart-container">
@@ -40,12 +39,13 @@
       <div class="wrong-details">
         <p class="score-text">Wrong</p>
         <p id="wrong-percentage"></p>
-        <p id="wrong-answers">2/6 questions</p>
+        <p id="wrong-answers"></p>
       </div>
     </div>
     <footer class="footer-button">
-      <button id="rateUs" onclick="location.href='https://www.google.co.uk'">RATE US</button>
+      <button id="rateUs" onclick="location.href='review.html'">RATE US</button>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script type="text/javascript" src="results.js"></script>
   </body>
 </html>
