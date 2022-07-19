@@ -1,0 +1,90 @@
+body {
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.logo {
+  height: 50px;
+  margin: 40px 100px;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-container {
+  position: relative;
+  height: 100%;
+  max-width: 700px;
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.results-title {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.resultsP {
+  font-size: 1.8rem;
+}
+
+.score-text {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#correct-percentage,
+#wrong-percentage {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+#correct-answers,
+#wrong-answers {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0;
+}
+#inner-text-span {
+  color: #00ffff;
+}
+
+.inner-chart-text {
+  position: absolute;
+  font-size: 0.9rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 15px 0 15px 0;
+  margin-top: 30%;
+  margin-left: 5%;
+  width: 200px;
+}
