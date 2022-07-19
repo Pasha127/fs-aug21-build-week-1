@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+    <title>Results Page</title>
+    <link rel="stylesheet" href="resultsstyles.css" />
+  </head>
+  <body>
+    <img class="logo" src="./assets/epicode_logo.png" alt="" />
+
+    <div class="container">
+      <div class="header">
+        <h1 class="results-title">Results</h1>
+        <p class="resultsP">The summary of your answers:</p>
+      </div>
+
+      <div class="main-section">
+      <div class="correct-details">
+        <p class="score-text">Correct</p>
+        <p id="correct-percentage"></p>
+        <p id="correct-answers"></p>
+      </div>
+      
+        <div class="chart-container">
+          <canvas style="height: 450px" id="myChart"></canvas>
+
+        <div class="inner-chart-text">
+          <p>Congratulations!<br/><span id="inner-text-span">You passed the exam.</span></p>
+          <div id="break"></div>
+          <p>We'll send you the certificate<br/>in few minutes.<br/>check your email (including<br/>promotions / spam folder)</p>
+        </div>
+      </div>
+      <div class="wrong-details">
+        <p class="score-text">Wrong</p>
+        <p id="wrong-percentage"></p>
+        <p id="wrong-answers"></p>
+      </div>
+    </div>
+    <footer class="footer-button">
+      <button id="rateUs" onclick="location.href='review.html'">RATE US</button>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="text/javascript" src="results.js"></script>
+  </body>
+</html>
