@@ -6,7 +6,7 @@ buttonNode.addEventListener("click", changeColor)
 
 function changeColor(){
     if(textNode.value === ""){
-        swal({ title: "HELLO🫠 !",
+        swal({ title: "HELLO!",
                text: "Please add some text!",
     });
     }else if(textNode.value !== ""){
