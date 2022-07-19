@@ -235,6 +235,7 @@ myChart.options.cutout =  35
             myChart.data.datasets[0].data[0] =  countUp;
             myChart.data.datasets[0].data[1] = countdownTimer;
             myChart.update();
+            clearInterval(interval);
         }else{
             timer.innerText = "0";
             clearInterval(interval);
