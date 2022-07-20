@@ -1,0 +1,85 @@
+body {
+  margin: 0px;
+  background: #0e0e0e;
+  height: 100%;
+  font-family: "Outfit", sans-serif;
+  }
+#maindiv {
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  }
+#logo {
+  margin-left: 190pt;
+  margin-bottom: 80pt;
+  position: relative;
+  top: 60px;
+  }  
+#welcome-to {
+  width: 580px;
+  font-family: "Outfit", sans-serif;
+  font-size: 63pt;
+  margin-top: 40pt;
+  margin-left: 190pt;
+  font-weight: 400;
+  display: inline-block;
+  color: white;
+  font-weight: 200;
+  line-height: 80%;
+  margin-bottom: 45px;
+}
+#text1 {
+  font-size: 22pt;
+  color: white;
+  text-align: center;
+  margin-top: 250px;
+}
+#text2 {
+  font-size: 14pt;
+  color: gray;
+  text-align: center;
+  margin-top: 120px;
+}
+
+#comment {
+  text-align: center;
+  margin-top: 88px;
+}
+#inputtext {
+  width: 250px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  border-color: blueviolet;
+  background-color: transparent;
+  color: gray;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+#button {
+  width: 400px;
+  height: 60px;
+  margin-top: 20px;
+  margin-left: 637px;
+  font-size: 18pt;
+  font-weight: 700;
+  background-color: rgb(210, 0, 148);
+  box-shadow: 0px 0px 45px #3dbaca;
+  border: 0px;
+  cursor: pointer;
+  transition: background 0.15s linear 0.1s , color 0.15s linear 0s;
+}
+#button:hover {
+  background:  rgb(210, 0, 148);
+  color: rgb(0,255,255);
+  box-shadow: 0px 0px 45px rgb(0,255,255);
+  border-color: rgb(0,255,255);
+  font-weight: bold;
+}
