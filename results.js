@@ -3,10 +3,9 @@ const correct = sessionStorage.getItem("score");
 const wrong = total - correct;
 
 //importing data
-let newNamesArray = JSON.parse(localStorage.getItem("names")); //to read
 let newScoresArray = JSON.parse(localStorage.getItem("data")); //to read
 console.log(newScoresArray);
-console.log(newNamesArray);
+
 for(let i = 0; i<newScoresArray.length; i++){
   if(newScoresArray[i][0]<10){
     newScoresArray[i] = "0"+newScoresArray[i].toString()
@@ -16,7 +15,7 @@ for(let i = 0; i<newScoresArray.length; i++){
   }
 }
 let arrayOfScoreDivs = newScoresArray.sort().reverse();
-console.log(arrayOfScoreDivs);
+//console.log(arrayOfScoreDivs);
 
 
 const leaderBoard = document.querySelector("#leaderBoardDiv");
@@ -70,8 +69,9 @@ btnRateUs.addEventListener(
   "click",
   () => (btnRateUs.style.backgroundColor = "#00FFFF")
 );
-let arrayGenerator = function(){ 
-  
+
+
+let arrayGenerator = function(){   
   
   for(let i=0; i<arrayOfScoreDivs.length; i++){
     const newScoreDiv = document.createElement("div");
@@ -80,11 +80,12 @@ let arrayGenerator = function(){
     newScoreDivText.innerText = arrayOfScoreDivs[i];
     leaderBoard.append(newScoreDiv);
     newScoreDiv.append(newScoreDivText); 
-    console.log(arrayOfScoreDivs)
+    //console.log(arrayOfScoreDivs)
   }
 
 }
 arrayGenerator();
+
 const clearBoard = function (){
   localStorage.clear();
   location.reload();
