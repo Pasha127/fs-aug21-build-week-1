@@ -73,3 +73,4 @@ let arrayGenerator = function(){
   }
 
 }
+arrayGenerator();
