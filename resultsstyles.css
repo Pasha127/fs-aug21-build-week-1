@@ -99,7 +99,7 @@ button {
 
 .scoreDiv {
   border: 5px solid wheat;
-  display: inline-block;
+  display: block;
   padding: 0.5;
   margin-top: 10%;
 }
