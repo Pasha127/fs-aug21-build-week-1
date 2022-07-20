@@ -17,8 +17,8 @@ const surname = document.getElementById("inputTextTwo")
 const email = document.getElementById("inputTextThree")
 
 function onEnter() {
-const userData = [nameone.value, surname.value, email.value]
-newScoresArray.push(userData)
+const userData = [0,nameone.value, surname.value, email.value]
+newScoresArray.unshift(userData)
 localStorage.setItem("data", JSON.stringify(newScoresArray)); 
 console.log(newScoresArray)
 console.log("local storage", JSON.parse(localStorage.getItem("data")))

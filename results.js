@@ -8,8 +8,11 @@ let newScoresArray = JSON.parse(localStorage.getItem("data")); //to read
 console.log(newScoresArray);
 console.log(newNamesArray);
 for(let i = 0; i<newScoresArray.length; i++){
-  if(newScoresArray[i]<10){
+  if(newScoresArray[i][0]<10){
     newScoresArray[i] = "0"+newScoresArray[i].toString()
+    newScoresArray[i] = newScoresArray[i].replaceAll(',',' ');
+  }else{
+    newScoresArray[i] = newScoresArray[i].toString().replaceAll(',',' ');    
   }
 }
 let arrayOfScoreDivs = newScoresArray.sort().reverse();
