@@ -37,6 +37,17 @@ addWrongAnswers.innerText = `${wrong}/${total} questions`;
 
 const btnRateUs = document.querySelector("#rateUs");
 
+function innerText() {
+  const addResultText = document.getElementById("innerChartTextResult");
+  if (correctPercentage < 60) {
+    document.getElementById("innerChartPassed").style.visibility = "hidden";
+    addResultText.innerText = `You failed the exam.
+    `;
+  }
+}
+
+console.log(innerText());
+
 btnRateUs.addEventListener(
   "click",
   () => (btnRateUs.style.backgroundColor = "#00FFFF")
