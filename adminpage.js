@@ -3,7 +3,7 @@ let textNode = document.getElementById("inputText")
 const correct = sessionStorage.getItem("score");
 
 let newScoresArray = [];
-if(sessionStorage.getItem("score")){
+if(localStorage.getItem("data")){
   console.log("true")
   newScoresArray = JSON.parse(localStorage.getItem("data"));
 } else {
@@ -35,7 +35,7 @@ function anotherPage(){
              text: "You forgot to put your name, surname and e-mail address.",});
   } else {
      onEnter();
-      window.location.href = "https://epicode.com/"; //add a location
+      window.location.href = "questions.html"; 
   }
 }
 

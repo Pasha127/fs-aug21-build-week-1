@@ -3,8 +3,10 @@ const correct = sessionStorage.getItem("score");
 const wrong = total - correct;
 
 //importing data
+let newNamesArray = JSON.parse(localStorage.getItem("names")); //to read
 let newScoresArray = JSON.parse(localStorage.getItem("data")); //to read
 console.log(newScoresArray);
+console.log(newNamesArray);
 for(let i = 0; i<newScoresArray.length; i++){
   if(newScoresArray[i]<10){
     newScoresArray[i] = "0"+newScoresArray[i].toString()

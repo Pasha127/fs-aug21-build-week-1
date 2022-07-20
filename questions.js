@@ -255,9 +255,9 @@ myChart.options.cutout =  35
         sessionStorage.setItem("numberOfQuestions", easyComputerQuestions.length);        
         sessionStorage.setItem("score", pointCount);
         window.open("./results.html","_self");
-        let newScoreArray =[7,6,5];           
+        let newScoreArray = JSON.parse(localStorage.getItem("scores"));           
         newScoreArray.unshift(pointCount);        
-        localStorage.setItem("data", JSON.stringify(newScoreArray));
+        localStorage.setItem("scores", JSON.stringify(newScoreArray));
 
     } 
     

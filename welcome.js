@@ -7,7 +7,7 @@ checkbox.addEventListener("click", function () {
 
 function proceedButton () {
   if(checkbox.classList.contains("selected")) { 
-     window.location.href = "questions.html"; 
+     window.location.href = "adminpage.html"; 
   } else {
      alert("To proceed to another page you need to check the box."); 
      }
