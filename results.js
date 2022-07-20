@@ -1,6 +1,7 @@
 const total = sessionStorage.getItem("numberOfQuestions");
 const correct = sessionStorage.getItem("score");
 const wrong = total - correct;
+//importing data
 let newScoresArray = JSON.parse(localStorage.getItem("data")); //to read
 console.log(newScoresArray);
 
@@ -54,3 +55,11 @@ btnRateUs.addEventListener(
   "click",
   () => (btnRateUs.style.backgroundColor = "#00FFFF")
 );
+
+for(let i=0; i<newScoresArray.length; i++){
+  const newScoreDiv = document.createElement("div");
+  newScoreDiv.classList.add("scoreDiv");
+  const newScoreDivText = document.createElement('p');
+  newScoreDivText.innerText = newScoresArray[i];  
+  
+}
