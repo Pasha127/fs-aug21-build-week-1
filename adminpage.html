@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMIN PAGE</title>
+  <link rel="stylesheet" href="adminpage.css">
+</head>
+<body>
+  <div id="maindiv">
+    <div id="logo"><img src="./assets/epicode_logo.png" alt="logo" style="width: 160px;height:40px;"></div>
+    <div id="text1">Please leave here your name, surname and e-mail address:</div>
+    <div id="comment">
+      <input type="text" class="inputfield" id="inputTextOne" placeholder="NAME" required> 
+      <input type="text" class="inputfield" id="inputTextTwo" placeholder="SURNAME"required> 
+      <input type="text" class="inputfield" id="inputTextThree" placeholder="EMAIL"required> 
+   </div>
+   <hr style="height:2px; width:40%; border-width:0; color:rgb(210, 0, 148); background-color:rgb(210, 0, 148)">
+   <div id="text2">Let's see your position in the ranking board.</div>
+   <div id="infobutton">
+    <button id="button">SHOW ME</button>
+   </div>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="adminpage.js"></script>
+</body>
+</html>
