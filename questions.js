@@ -327,8 +327,9 @@ const questionWrong = function (){
     nextQuestion();
 }
 };
-
-
+let newScoreArray =[5,6,7]
+newScoreArray.push(pointCount)
+localStorage.setItem("data", JSON.stringify(newScoreArray));
 
 
 
