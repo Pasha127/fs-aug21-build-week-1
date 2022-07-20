@@ -1,9 +1,15 @@
 const total = sessionStorage.getItem("numberOfQuestions");
 const correct = sessionStorage.getItem("score");
 const wrong = total - correct;
+
 //importing data
 let newScoresArray = JSON.parse(localStorage.getItem("data")); //to read
 console.log(newScoresArray);
+for(let i = 0; i<newScoresArray.length; i++){
+  if(newScoresArray[i]<10){
+    newScoresArray[i] = "0"+newScoresArray[i].toString()
+  }
+}
 let arrayOfScoreDivs = newScoresArray.sort().reverse();
 console.log(arrayOfScoreDivs);
 
