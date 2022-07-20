@@ -1,6 +1,8 @@
 const total = sessionStorage.getItem("numberOfQuestions");
 const correct = sessionStorage.getItem("score");
 const wrong = total - correct;
+let newScoresArray = JSON.parse(localStorage.getItem("data")); //to read
+console.log(newScoresArray);
 
 const correctPercentage = (correct / total) * 100;
 const wrongPercentage = 100 - correctPercentage;

@@ -255,6 +255,10 @@ myChart.options.cutout =  35
         sessionStorage.setItem("numberOfQuestions", easyComputerQuestions.length);        
         sessionStorage.setItem("score", pointCount);
         window.open("./results.html","_self");
+        let newScoreArray =[5,6,7]
+        newScoreArray.push(pointCount)
+        localStorage.setItem("data", JSON.stringify(newScoreArray));
+
     } 
     
     const answerContainer = document.querySelector(".answerContainer");
@@ -327,9 +331,6 @@ const questionWrong = function (){
     nextQuestion();
 }
 };
-let newScoreArray =[5,6,7]
-newScoreArray.push(pointCount)
-localStorage.setItem("data", JSON.stringify(newScoreArray));
 
 
 
