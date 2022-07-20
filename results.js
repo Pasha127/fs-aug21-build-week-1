@@ -4,7 +4,7 @@ const wrong = total - correct;
 //importing data
 let newScoresArray = JSON.parse(localStorage.getItem("data")); //to read
 console.log(newScoresArray);
-
+const leaderBoard = document.querySelector("#leaderBoardDiv");
 const correctPercentage = (correct / total) * 100;
 const wrongPercentage = 100 - correctPercentage;
 
@@ -60,6 +60,9 @@ for(let i=0; i<newScoresArray.length; i++){
   const newScoreDiv = document.createElement("div");
   newScoreDiv.classList.add("scoreDiv");
   const newScoreDivText = document.createElement('p');
-  newScoreDivText.innerText = newScoresArray[i];  
+  newScoreDivText.innerText = newScoresArray[i];
+  leaderBoard.append(newScoreDiv);
+  newScoreDiv.append(newScoreDivText);
+    
   
 }
