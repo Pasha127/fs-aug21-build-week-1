@@ -19,13 +19,23 @@ body{
 .border:hover{ 
   background-image: linear-gradient(180deg, #d20093,#d20093,#d20093, #50063a56),linear-gradient(180deg, #ffffff,#ffffff,#d20093, #50063a56) ;    
 }
-#logo {
+/* .logo {
     margin-left: 190pt;
     margin-bottom: 80pt;
     position: relative;
     top: 60px;
-    max-width: 150px;
+    max-width: 180px;
+    }   */
+
+.responsiveLogo{
+    margin-left: 12vw;
+    margin-bottom: 80pt;
+    position: relative;
+    top: 60px;
+    max-width: 180px;
     }  
+    
+
 .titleContainer{
     display: flex;
     position: absolute;    
@@ -160,6 +170,7 @@ body{
     position: absolute;
     transform: translateY(20px);
 }
+
 .inFront{
     z-index: 1;
 }
