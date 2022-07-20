@@ -85,3 +85,7 @@ let arrayGenerator = function(){
 
 }
 arrayGenerator();
+const clearBoard = function (){
+  localStorage.clear();
+  location.reload();
+}
