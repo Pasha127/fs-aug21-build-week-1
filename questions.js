@@ -330,8 +330,17 @@ const questionRight = function (){
 const questionWrong = function (){
     nextQuestion();
 }
-};
 
+function checkTabFocused() {
+    if (document.visibilityState === 'visible') {
+        console.log('✅ browser tab has focus');  
+    } else {
+        console.log('⛔️ browser tab does NOT have focus');
+        nextQuestion();  
+    }
+}
+document.addEventListener('visibilitychange', checkTabFocused);
+};
 
 
 
