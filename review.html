@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW PAGE</title>
+    <link rel="stylesheet" href="reviewstyles.css">
+</head>
+<body>
+  <div id="main-div">
+    <div id="logo">
+      <img src="./assets/epicode_logo.png" alt="logo" style="width: 160px;height:40px;">
+    </div>
+    <div id="h1div">
+      <h1 id="h1text">Tell us how it's going</h1>
+    </div>
+    <div id="text1">From 0 to 10, how likely are you to recommend EPICODE</div>
+    <div id="text2">to a friend or a colleague?</div>
+    <div id="star">
+      <ul class="rating">
+        <li class="rating-item" data-rate="1"></li>
+        <li class="rating-item active" data-rate="2"></li>
+        <li class="rating-item" data-rate="3"></li>
+        <li class="rating-item" data-rate="4"></li>
+        <li class="rating-item" data-rate="5"></li>
+        <li class="rating-item" data-rate="6"></li>
+        <li class="rating-item" data-rate="7"></li>
+        <li class="rating-item" data-rate="8"></li>
+        <li class="rating-item" data-rate="9"></li>
+        <li class="rating-item" data-rate="10"></li>
+      </ul>
+    </div>
+    <div id="feedback">
+              Leave us an open feedback about your experience so far
+    </div>
+    <div id="comment">
+       <input type="text" id="inputtext" placeholder="Write your comment here"> 
+    </div>
+          
+      <hr style="height:2px; width:40%; border-width:0; color:rgb(210, 0, 148); background-color:rgb(210, 0, 148)">
+         
+    <div id="infobutton">
+        <button id="button">MORE INFO</button>
+     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="review.js"></script>
+  </div>
