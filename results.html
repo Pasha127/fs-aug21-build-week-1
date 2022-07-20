@@ -21,7 +21,7 @@
       </div>
 
       <div class="main-section">
-      <div class="correct-details">
+      <div>
         <p class="score-text">Correct</p>
         <p id="correct-percentage"></p>
         <p id="correct-answers"></p>
@@ -31,12 +31,16 @@
           <canvas style="height: 450px" id="myChart"></canvas>
 
         <div class="inner-chart-text">
-          <p>Congratulations!<br/><span id="inner-text-span">You passed the exam.</span></p>
-          <div id="break"></div>
-          <p>We'll send you the certificate<br/>in few minutes.<br/>check your email (including<br/>promotions / spam folder)</p>
+          <div id="innerChartTextResult">
+            <div id="innerChartPassed">
+              <p>Congratulations!<br/><span id="inner-text-span">You passed the exam.</span></p>
+              <div id="break"></div>
+              <p>We'll send you the certificate<br/>in few minutes.<br/>check your email (including<br/>promotions / spam folder)</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="wrong-details">
+      <div>
         <p class="score-text">Wrong</p>
         <p id="wrong-percentage"></p>
         <p id="wrong-answers"></p>
