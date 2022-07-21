@@ -91,12 +91,13 @@ body {
   cursor: pointer;
   outline: none;
 }
-
+#infobutton {
+  text-align: center;
+}
 #button {
   width: 400px;
   height: 60px;
   margin-top: 20px;
-  margin-left: 637px;
   font-size: 18pt;
   font-weight: 700;
   background-color: rgb(210, 0, 148);
