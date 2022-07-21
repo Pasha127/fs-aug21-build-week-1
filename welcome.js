@@ -1,4 +1,3 @@
-window.open ("./welcome.html","_self");
 
 const checkbox = document.querySelector("#checkbox")
 checkbox.addEventListener("click", function () {

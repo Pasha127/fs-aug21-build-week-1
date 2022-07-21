@@ -256,7 +256,8 @@ myChart.options.cutout =  35
         sessionStorage.setItem("score", pointCount);
         window.open("./results.html","_self");
         let newScoreArray = JSON.parse(localStorage.getItem("data"));           
-        newScoreArray[0][0]=pointCount.toString() +"points  -  ";   
+        newScoreArray[0][0]=pointCount.toString();        
+        console.log(newScoreArray[0]);
         localStorage.setItem("data", JSON.stringify(newScoreArray));
 
     } 
