@@ -170,7 +170,6 @@ body{
     position: absolute;
     transform: translateY(20px);
 }
-
 .inFront{
     z-index: 1;
 }
@@ -178,6 +177,6 @@ body{
     display: flex;
     position: absolute;    
     width: 100px;    
-    right: 24.2vw;
-    top: 0px;    
+    right: 11.2vw;
+    top: 50px;    
 }
