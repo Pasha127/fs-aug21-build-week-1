@@ -14,10 +14,9 @@ console.log(newScoresArray)
 
 const nameone = document.getElementById("inputTextOne")
 const surname = document.getElementById("inputTextTwo")
-const email = document.getElementById("inputTextThree")
 
 function onEnter() {  
-const userData = [0,nameone.value, surname.value, email.value]
+const userData = [0,nameone.value, surname.value]
 newScoresArray.unshift(userData)
 localStorage.setItem("data", JSON.stringify(newScoresArray)); 
 console.log(newScoresArray)
@@ -30,65 +29,20 @@ buttonNode.addEventListener("click", anotherPage)
 
 function anotherPage(){
 
-  if(!isThisAnEmail(email.value)){
+  if (nameone.value === "" && surname.value === ""){
     Swal.fire({
-      title: 'Please insert your credentials correctly.',
+      title: 'Please insert your name and surname.',
       width: 600,
       padding: '3em',
       color: '#716add',
       backdrop: `
-        rgba(0,0,123,0.4)
-        center
-        no-repeat
-      ` })
-    return;
-  }
-  
-  else if (nameone.value === "" && surname.value === "" && email.value === ""){
-    Swal.fire({
-      title: 'Please insert your name, surname and e-mail address.',
-      width: 600,
-      padding: '3em',
-      color: '#716add',
-      backdrop: `
-        rgba(0,0,123,0.4)
+        rgba(0,0,123,0.4)s
         center
         no-repeat
       ` })
   } else {
      onEnter();
       window.location.href = "questions.html"; 
-  }
-}
-
-let isThisAnEmail = function (str) {
-  let newArr = str.split("");    
-  let hasAt = false;
-  let hasDomain = false;
-  let domainArr = []; 
-  let domainStr = "";
-  for(let i=0;i<newArr.length;i++){
-      if(newArr[i] === "@"){
-          hasAt = true;            
-          break;
-      }else{
-          hasAt = false;            
-      }
-  }
-  for(j=newArr.length;j>=0;j--){
-      domainArr.unshift(newArr[j]);
-      if(newArr[j] === "."){
-          if((newArr.length - j)>=2){
-              hasDomain = true;
-              break;
-          }else{break;}
-      };
-  }
-  if(hasDomain && hasAt){
-      return true;
-
-  }else{
-      return false;
   }
 }
 

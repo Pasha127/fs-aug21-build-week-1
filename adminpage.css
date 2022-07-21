@@ -78,19 +78,6 @@ body {
   outline: none;
 }
 
-#inputTextThree{
-  width: 250px;
-  height: 40px;
-  border-radius: 50px;
-  text-align: center;
-  font-family: "Outfit", sans-serif;
-  background-color: transparent;
-  color: gray;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  outline: none;
-}
 #infobutton {
   text-align: center;
 }
