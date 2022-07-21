@@ -36,8 +36,16 @@ function anotherPage(){
   }
   
   if (nameone.value === "" && surname.value === "" && email.value === ""){
-      swal({ title: "Hello!",
-             text: "You forgot to put your name, surname and e-mail address.",});
+    Swal.fire({
+      title: 'Please insert your name, surname and e-mail address.',
+      width: 600,
+      padding: '3em',
+      color: '#716add',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        center
+        no-repeat
+      ` })
   } else {
      onEnter();
       window.location.href = "questions.html"; 
