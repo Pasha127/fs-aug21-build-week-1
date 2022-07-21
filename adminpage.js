@@ -30,9 +30,6 @@ buttonNode.addEventListener("click", anotherPage)
 
 //button
 
-function anotherPage(){
-  
-  if (nameone.value === "" && surname.value === "" && email.value === ""){
 
 function anotherPage(){
 
@@ -52,6 +49,4 @@ function anotherPage(){
      onEnter();
       window.location.href = "questions.html"; 
   }
-}
-}
 }
