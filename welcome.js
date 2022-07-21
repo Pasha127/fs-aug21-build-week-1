@@ -1,4 +1,3 @@
-window.open ("./welcome.html","_self");
 
 const checkbox = document.querySelector("#checkbox")
 checkbox.addEventListener("click", function () {
@@ -7,7 +6,7 @@ checkbox.addEventListener("click", function () {
 
 function proceedButton () {
   if(checkbox.classList.contains("selected")) { 
-     window.location.href = "questions.html"; 
+     window.location.href = "adminpage.html"; 
   } else {
      Swal.fire({
       title: 'To proceed to another page you need to check the box.',

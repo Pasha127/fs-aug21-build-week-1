@@ -255,6 +255,11 @@ myChart.options.cutout =  35
         sessionStorage.setItem("numberOfQuestions", easyComputerQuestions.length);        
         sessionStorage.setItem("score", pointCount);
         window.open("./results.html","_self");
+        let newScoreArray = JSON.parse(localStorage.getItem("data"));           
+        newScoreArray[0][0]=pointCount.toString();          
+        console.log(newScoreArray[0]);
+        localStorage.setItem("data", JSON.stringify(newScoreArray));
+
     } 
     
     const answerContainer = document.querySelector(".answerContainer");
@@ -326,10 +331,17 @@ const questionRight = function (){
 const questionWrong = function (){
     nextQuestion();
 }
+
+function checkTabFocused() {
+    if (document.visibilityState === 'visible') {
+        console.log('✅ browser tab has focus');  
+    } else {
+        console.log('⛔️ browser tab does NOT have focus');
+        nextQuestion();  
+    }
+}
+document.addEventListener('visibilitychange', checkTabFocused);
 };
-
-
-
 
 
 
