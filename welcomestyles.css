@@ -2,6 +2,7 @@ body {
   margin: 0px;
   background: #0e0e0e;
   height: 100%;
+  font-family: "Outfit", sans-serif;
   }
 #main-div {
   background-image: url('./assets/bg.jpg');
