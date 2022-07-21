@@ -24,18 +24,27 @@ console.log(newScoresArray)
 console.log("local storage", JSON.parse(localStorage.getItem("data")))
 }
 
+//button
 
 buttonNode.addEventListener("click", anotherPage)
 
-//button
-
 function anotherPage(){
+
   if(!isThisAnEmail(email.value)){
-    alert("Please enter a valid email address")
+    Swal.fire({
+      title: 'Please insert your credentials correctly.',
+      width: 600,
+      padding: '3em',
+      color: '#716add',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        center
+        no-repeat
+      ` })
     return;
   }
   
-  if (nameone.value === "" && surname.value === "" && email.value === ""){
+  else if (nameone.value === "" && surname.value === "" && email.value === ""){
     Swal.fire({
       title: 'Please insert your name, surname and e-mail address.',
       width: 600,
@@ -51,6 +60,7 @@ function anotherPage(){
       window.location.href = "questions.html"; 
   }
 }
+
 let isThisAnEmail = function (str) {
   let newArr = str.split("");    
   let hasAt = false;
