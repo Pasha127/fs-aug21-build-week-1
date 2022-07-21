@@ -29,11 +29,7 @@ buttonNode.addEventListener("click", anotherPage)
 
 //button
 
-function anotherPage(){
-  if(!isThisAnEmail(email.value)){
-    alert("Please enter a valid email address")
-    return;
-  }
+function anotherPage(){  
   
   if (nameone.value === "" && surname.value === "" && email.value === ""){
     Swal.fire({
@@ -49,36 +45,6 @@ function anotherPage(){
   } else {
      onEnter();
       window.location.href = "questions.html"; 
-  }
-}
-let isThisAnEmail = function (str) {
-  let newArr = str.split("");    
-  let hasAt = false;
-  let hasDomain = false;
-  let domainArr = []; 
-  let domainStr = "";
-  for(let i=0;i<newArr.length;i++){
-      if(newArr[i] === "@"){
-          hasAt = true;            
-          break;
-      }else{
-          hasAt = false;            
-      }
-  }
-  for(j=newArr.length;j>=0;j--){
-      domainArr.unshift(newArr[j]);
-      if(newArr[j] === "."){
-          if((newArr.length - j)>=2){
-              hasDomain = true;
-              break;
-          }else{break;}
-      };
-  }
-  if(hasDomain && hasAt){
-      return true;
-
-  }else{
-      return false;
   }
 }
 
