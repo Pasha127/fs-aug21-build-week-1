@@ -14,31 +14,37 @@ console.log(newScoresArray)
 
 const nameone = document.getElementById("inputTextOne")
 const surname = document.getElementById("inputTextTwo")
-const email = document.getElementById("inputTextThree")
 
 function onEnter() {  
-const userData = [0,nameone.value, surname.value, email.value]
+  const userData = [0,nameone.value, surname.value]
 newScoresArray.unshift(userData)
 localStorage.setItem("data", JSON.stringify(newScoresArray)); 
 console.log(newScoresArray)
 console.log("local storage", JSON.parse(localStorage.getItem("data")))
 }
 
+//button
 
 buttonNode.addEventListener("click", anotherPage)
 
+
 //button
 
-function anotherPage(){  
+function anotherPage(){
   
   if (nameone.value === "" && surname.value === "" && email.value === ""){
+
+function anotherPage(){
+
+  if (nameone.value === "" && surname.value === ""){
+
     Swal.fire({
-      title: 'Please insert your name, surname and e-mail address.',
+      title: 'Please insert your name and surname.',
       width: 600,
       padding: '3em',
       color: '#716add',
       backdrop: `
-        rgba(0,0,123,0.4)
+        rgba(0,0,123,0.4)s
         center
         no-repeat
       ` })
@@ -47,5 +53,5 @@ function anotherPage(){
       window.location.href = "questions.html"; 
   }
 }
-
- 
+}
+}
