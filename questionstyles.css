@@ -155,7 +155,8 @@ body{
     margin: 55px 0 0 50px;
     display: flex;
     font-size: 24pt;
-    position: absolute;       
+    position: absolute;
+         
 }
 #countdownTimerText{
     position: fixed;
@@ -178,6 +179,6 @@ body{
     display: flex;
     position: absolute;    
     width: 100px;    
-    right: 24.2vw;
-    top: 0px;    
+    right: 10vw;
+    top: 5vh;    
 }
