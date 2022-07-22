@@ -50,16 +50,20 @@
     <div class="testContainer">
       <div class="popup" id="popup">
         <div class="popup-inner">
-          <div id="leaderBoardDiv">
+          <div id="leaderBoardContainer">
             <h2>LeaderBoard</h2>
+            <div id="leaderBoardDiv">
+            </div>
+            <div>
+              <a class="clearScoresButton" onclick="clearBoard()">Clear Board</a>
+            </div>  
           </div>
-          <!-- <button class="clearScoresButton" onclick="clearBoard()">Clear Leader Board</button> -->
           <a class="closepopup" href="#">X</a>
         </div>
       </div>
     <footer>
-      <button id="rateUs" onclick="location.href='review.html'">RATE US</button>
-       <a class="button" href="#popup">LeaderBoard</a>
+      <a class= "button" id="rateUs" onclick="location.href='review.html'">RATE US</a>
+      <a class="button" href="#popup">LeaderBoard</a>
     </footer>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>

@@ -76,27 +76,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
-button {
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid white;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 15px 0 15px 0;
-  margin-top: 10%;
-  margin-left: 5%;
-  width: 200px;
+footer {
+  display: flex;
+  text-align: justify;
+  text-align: center;
 }
 
-/* .testContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .button {
-  display: inline-block;
   background-color: transparent;
   color: #fff;
   border: 2px solid white;
@@ -104,14 +90,16 @@ button {
   font-size: 1.2rem;
   font-weight: 600;
   padding: 15px 0 15px 0;
-  margin-top: 10%;
+  margin-top: 20%;
   margin-left: 5%;
   width: 200px;
   text-transform: uppercase;
   text-decoration: none;
 }
 
+
 .clearScoresButton {
+  background-color: rgba(128, 0, 128, 0.37);
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
@@ -121,10 +109,9 @@ button {
   color: #d20094;
   padding: 1rem 2rem;
   font-weight: 900;
-}
-
-.clearScoresButton {
-  background-color: rgba(128, 0, 128, 0.37);
+  margin-top: 6%;
+  align-self: flex-start;
+  cursor: pointer;
 }
 
 .popup {
@@ -158,15 +145,14 @@ button {
   transition: 0.64s ease-in-out;
 }
 
-#leaderBoardDiv {
+#leaderBoardContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   padding: 1rem;
-  /* box-sizing: border-box; */
 }
-#leaderBoardDiv h2 {
+#leaderBoardContainer h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -183,9 +169,6 @@ button {
 }
 
 #leaderBoardDiv p {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   font-size: 1rem;
   color: #ffffff;
   line-height: 1.5;
