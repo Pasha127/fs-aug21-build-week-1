@@ -70,11 +70,12 @@ body {
 
 .inner-chart-text {
   position: absolute;
-  font-size: 0.9rem;
+  font-size: 1rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 footer {
   display: flex;
@@ -90,7 +91,7 @@ footer {
   font-size: 1.2rem;
   font-weight: 600;
   padding: 15px 0 15px 0;
-  margin-top: 20%;
+  margin-top: 15%;
   margin-left: 5%;
   width: 200px;
   text-transform: uppercase;
@@ -200,3 +201,19 @@ footer {
   cursor: pointer;
   text-decoration: none;
 }
+
+
+
+/* .scoreDiv p{
+    transform: translateY(-10%);
+    animation: floater 1.5s infinite;
+    transition: ease 0.5s;
+    width: 80px;
+    height:80px;
+  }
+
+@keyframes floater {
+  0%{transform: translateY(-10%);transition: ease 0.5s;}
+  50%{transform: translateY(10%);transition: ease 0.5s;}
+} */
+
