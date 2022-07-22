@@ -204,16 +204,15 @@ footer {
 
 
 
-/* .scoreDiv p{
+ .scoreDiv p{
     transform: translateY(-10%);
     animation: floater 1.5s infinite;
     transition: ease 0.5s;
-    width: 80px;
-    height:80px;
+    
   }
 
 @keyframes floater {
   0%{transform: translateY(-10%);transition: ease 0.5s;}
   50%{transform: translateY(10%);transition: ease 0.5s;}
-} */
+} 
 
