@@ -70,13 +70,20 @@ body {
 
 .inner-chart-text {
   position: absolute;
-  font-size: 0.9rem;
+  font-size: 1rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-button {
+
+footer {
+  display: flex;
+  text-align: justify;
+  text-align: center;
+}
+
+.button {
   background-color: transparent;
   color: #fff;
   border: 2px solid white;
@@ -84,22 +91,129 @@ button {
   font-size: 1.2rem;
   font-weight: 600;
   padding: 15px 0 15px 0;
-  /* margin-top: 30%;
-  margin-left: 5%; */
+  margin-top: 15%;
+  margin-left: 5%;
   width: 200px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-#leaderBoardDiv {
-  width: 50vw;
-  height: 60vh;
-  background-color: black;
+
+.clearScoresButton {
+  background-color: rgba(128, 0, 128, 0.37);
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  color: #d20094;
+  padding: 1rem 2rem;
+  font-weight: 900;
+  margin-top: 6%;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hiden;
+  transition: 0.64s ease-in-out;
+}
+.popup-inner {
+  position: relative;
+  bottom: -100vw;
+  right: -100vh;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  max-height: 600px;
+  width: 100%;
+  height: 100%;
+  background-color: #0c113b;
+  transform: rotate(32deg);
+  transition: 0.64s ease-in-out;
+}
+
+#leaderBoardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+#leaderBoardContainer h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.scoreDiv p {
+  border: 10px solid #d20094;
+  border-radius: 35px;
+  background-color: #d20094;
+  margin: 5px;
+  display: inline-block;
+}
+
+#leaderBoardDiv p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup:target .popup-inner {
+  bottom: 0;
+  right: 0;
+  transform: rotate(0);
+}
+.closepopup {
   position: absolute;
-  margin-top: 10%;
+  right: -1rem;
+  top: -1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 100%;
+  background-color: #00ffff;
+  z-index: 4;
+  color: #fff;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.scoreDiv {
-  border: 5px solid wheat;
-  display: block;
-  padding: 0.5;
-  margin-top: 10%;
-}
+
+
+/* .scoreDiv p{
+    transform: translateY(-10%);
+    animation: floater 1.5s infinite;
+    transition: ease 0.5s;
+    width: 80px;
+    height:80px;
+  }
+
+@keyframes floater {
+  0%{transform: translateY(-10%);transition: ease 0.5s;}
+  50%{transform: translateY(10%);transition: ease 0.5s;}
+} */
+
