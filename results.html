@@ -46,13 +46,26 @@
         <p id="wrong-answers"></p>
       </div>
     </div>
-    <div id="leaderBoardDiv">
-      <button class="clearScoresButton" onclick="clearBoard()">Clear Leader Board</button>
-    </div>
-    <footer class="footer-button">
-      <button id="rateUs" onclick="location.href='review.html'">RATE US</button>
-      <button id="leaderBoard" onclick="location.href=''">LeaderBoard</button>
+    
+    <div class="testContainer">
+      <div class="popup" id="popup">
+        <div class="popup-inner">
+          <div id="leaderBoardContainer">
+            <h2>LeaderBoard</h2>
+            <div id="leaderBoardDiv">
+            </div>
+            <div>
+              <a class="clearScoresButton" onclick="clearBoard()">Clear Board</a>
+            </div>  
+          </div>
+          <a class="closepopup" href="#">X</a>
+        </div>
+      </div>
+    <footer>
+      <a class= "button" id="rateUs" onclick="location.href='review.html'">RATE US</a>
+      <a class="button" href="#popup">LeaderBoard</a>
     </footer>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script type="text/javascript" src="results.js"></script>
   </body>

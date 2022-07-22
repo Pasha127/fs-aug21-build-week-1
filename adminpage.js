@@ -16,7 +16,7 @@ const nameone = document.getElementById("inputTextOne")
 const surname = document.getElementById("inputTextTwo")
 
 function onEnter() {  
-const userData = [0,nameone.value, surname.value]
+  const userData = [0,nameone.value, surname.value]
 newScoresArray.unshift(userData)
 localStorage.setItem("data", JSON.stringify(newScoresArray)); 
 console.log(newScoresArray)
@@ -27,9 +27,14 @@ console.log("local storage", JSON.parse(localStorage.getItem("data")))
 
 buttonNode.addEventListener("click", anotherPage)
 
+
+//button
+
+
 function anotherPage(){
 
   if (nameone.value === "" && surname.value === ""){
+
     Swal.fire({
       title: 'Please insert your name and surname.',
       width: 600,
@@ -45,5 +50,3 @@ function anotherPage(){
       window.location.href = "questions.html"; 
   }
 }
-
- 

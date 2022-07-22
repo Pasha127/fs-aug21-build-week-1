@@ -15,6 +15,9 @@ for(let i = 0; i<newScoresArray.length; i++){
   }
 }
 let arrayOfScoreDivs = newScoresArray.sort().reverse();
+if(arrayOfScoreDivs.length>6){
+  arrayOfScoreDivs.pop();
+}
 //console.log(arrayOfScoreDivs);
 
 
