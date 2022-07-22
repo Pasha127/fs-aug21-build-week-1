@@ -6,9 +6,16 @@ buttonNode.addEventListener("click", changeColor)
 
 function changeColor(){
     if(textNode.value === ""){
-        swal({ title: "HELLO!",
-               text: "Please add some text!",
-    });
+        Swal.fire({
+            title: 'Please add some text!',
+            width: 600,
+            padding: '3em',
+            color: '#716add',
+            backdrop: `
+              rgba(0,0,123,0.4)s
+              center
+              no-repeat
+            ` });
     }else if(textNode.value !== ""){
         window.location.href = "https://epicode.com/"; 
         }
