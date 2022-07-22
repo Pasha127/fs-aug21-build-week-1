@@ -6,13 +6,21 @@ buttonNode.addEventListener("click", changeColor)
 
 function changeColor(){
     if(textNode.value === ""){
-        swal({ title: "HELLO!",
-               text: "Please add some text!",
-    });
+        Swal.fire({
+            title: 'Please add some text.',
+            width: 600,
+            padding: '3em',
+            color: '#716add',
+            backdrop: `
+              rgba(0,0,123,0.4)
+              center
+              no-repeat
+            ` })
+    
     }else if(textNode.value !== ""){
         window.location.href = "https://epicode.com/"; 
         }
-    }
+    
     const container = document.querySelector('.rating')
     const items = container.querySelectorAll('.rating-item')
     container.onclick = e => {
@@ -26,3 +34,4 @@ function changeColor(){
         }
     }
 
+}
