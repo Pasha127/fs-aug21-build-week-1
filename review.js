@@ -20,7 +20,7 @@ function changeColor(){
     }else if(textNode.value !== ""){
         window.location.href = "https://epicode.com/"; 
         }
-    
+    }
     const container = document.querySelector('.rating')
     const items = container.querySelectorAll('.rating-item')
     container.onclick = e => {
@@ -34,4 +34,3 @@ function changeColor(){
         }
     }
 
-}
