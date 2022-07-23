@@ -240,7 +240,8 @@ myChart.options.cutout =  35
             timer.innerText = "0";
             
             countUp = 0;
-            setTimeout(nextQuestion, 1000)
+            nextQuestion();
+            
         }
         //console.log(timer.innerText);
         
